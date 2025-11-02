@@ -495,3 +495,80 @@ footer {
     margin: auto;
   }
 }
+
+/* ======= Mobile Responsive Fixes ======= */
+@media (max-width: 768px) {
+  /* Navbar */
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 20px;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  /* Hero Section */
+  .firstSection {
+    flex-direction: column;
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  .firstSection div {
+    width: 90%;
+  }
+
+  .leftSection {
+    font-size: 1.4rem;
+  }
+
+  .rightSection img {
+    width: 70%;
+    margin: 20px auto;
+    display: block;
+  }
+
+  /* Timeline Section */
+  .timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-item {
+    width: 90%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .timeline::before {
+    display: none; /* remove horizontal line on mobile */
+  }
+}
+
+/* Even smaller phones */
+@media (max-width: 480px) {
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .skillsSection h1,
+  .secondSection h1,
+  .thirdSection h1,
+  .contactSection h1 {
+    font-size: 1.5rem;
+  }
+}
+
